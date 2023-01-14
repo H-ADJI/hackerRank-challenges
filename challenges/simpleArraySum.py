@@ -1,6 +1,10 @@
-
-test_input = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-expected_output = 45
+'''
+File: simpleArraySum.py
+File Created: Saturday, 14th January 2023 10:33:18 am
+Author: KHALIL HADJI 
+-----
+Copyright:  KHALIL HADJI 2023
+'''
 
 
 def simpleArraySum(ar):
@@ -8,5 +12,3 @@ def simpleArraySum(ar):
     for e in ar:
         s += e
     return s
-
-
