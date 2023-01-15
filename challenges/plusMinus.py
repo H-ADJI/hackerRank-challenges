@@ -1,9 +1,7 @@
 '''
 File: plusMinus.py
-File Created: Saturday, 14th January 2023 11:50:02 am
-Author: KHALIL HADJI 
 -----
-Copyright:  KHALIL HADJI 2023
+Author: KHALIL HADJI 
 '''
 
 
