@@ -1,7 +1,7 @@
 import typer
 import os
 import time
-from utils import get_challenge_name, get_file_creation_date,challenge_files
+from utils.utils import get_challenge_name, get_file_creation_date, challenge_files, CHALLENGES_PATH
 import re
 from pathlib import Path
 from rich import print as rprint
@@ -34,6 +34,15 @@ def last_solved():
 @cli.command()
 def solved_count():
     rprint(f"You solved {len(challenge_files)} problem so far")
+
+
+@cli.command()
+def new_challenge(challenge_name: str, author: str = "KHALIL HADJI"):
+    with open(Path(CHALLENGES_PATH).joinpath(f"{challenge_name}.py"), "w") as challenge, open("./utils/template.txt", "r") as t:
+        template = t.read()
+        challenge.write(template.format(
+            challenge_name=challenge_name, author=author))
+    rprint(f"A file for Challenge {(challenge_name)} was just created, make sure to write the function body and setup the corect input arguments")
 
 
 if __name__ == "__main__":
