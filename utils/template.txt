@@ -1,0 +1,9 @@
+'''
+File: {challenge_name}.py
+-----
+Author: {author} 
+'''
+
+
+def {challenge_name}(*args,**kwargs):
+    pass

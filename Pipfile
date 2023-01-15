@@ -4,6 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+typer = {extras = ["all"], version = "*"}
+typer-cli = "*"
 
 [dev-packages]
 autopep8 = "*"
